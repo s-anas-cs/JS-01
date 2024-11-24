@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SCSC TAXES SHEET</h1>
+        <label for="income">Enter your income:</label>
+        <input type="number" id="income" placeholder="Enter your income" />
+
+        <label for="taxRate">Select Tax Rate:</label>
+        <select id="taxRate">
+            <option value="6">6%</option>
+            <option value="8">8%</option>
+            <option value="12">12%</option>
+            <option value="16">16%</option>
+            <option value="20">20%</option>
+            <option value="24">24%</option>
+            <option value="28">28%</option>
+            <option value="32">32%</option>
+            <option value="36">36%</option>
+        </select>
+
+        <button onclick="calculateTax()">Calculate Tax</button>
+
+        <div id="result">
+            <p>Total Tax: <span id="taxAmount">0</span></p>
+            <p>Net Income: <span id="netIncome">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
